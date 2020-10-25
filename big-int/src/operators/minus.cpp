@@ -82,6 +82,13 @@ largeInt largeInt::operator-(const largeInt& _z) {
     if (!z2.sign && !z1.sign) {
         diff.sign = !diff.sign;
     }
+
+    // Remove zero from the front(after reverse) of number
+    while (diff.number.back() == '0')
+    {
+        diff.number.pop_back();
+    }
+
     std::reverse(diff.number.begin(), diff.number.end());
     return diff;
 }
