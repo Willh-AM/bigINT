@@ -35,20 +35,20 @@ namespace libbig
 
 largeInt &largeInt::operator-=(const largeInt& z)
 {
-    *this = *this - z;
-    return *this;
+    (*this) = (*this) - z;
+    return (*this);
 }
 
 largeInt &largeInt::operator-=(int z)
 {
-    *this = *this - largeInt(z);
-    return *this;
+    (*this) = (*this) - largeInt(z);
+    return (*this);
 }
 
 largeInt &largeInt::operator-=(int64_t z)
 {
-    *this = *this - largeInt(z);
-    return *this;
+    (*this) = (*this) - largeInt(z);
+    return (*this);
 }
 
 } // namespace libbig

@@ -6,7 +6,10 @@
 int main()
 {  
     libbig::largeInt a,b;
+<<<<<<< HEAD
     //64 bits var to prevent overflow at sum between i1 and i2
+=======
+>>>>>>> d9160befc499c431dbd10adfcc612c9826abccfc
     int64_t i1, i2;
 
     std::random_device rd; // obtain a random number from hardware
